@@ -1,0 +1,17 @@
+{
+  "name": "projeto-node-postgresql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.7",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
+}
