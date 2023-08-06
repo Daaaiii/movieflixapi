@@ -14,7 +14,10 @@
 - TypeScript
 - PostgreSQL
 - Prisma
+- Insomnia
+- DBeaver
 - Swagger
   
 ## Resultado
-
+ API que permite listar, atualizar, remover e filtrar filmes por gênero em um banco de dados de filmes.
+ 
