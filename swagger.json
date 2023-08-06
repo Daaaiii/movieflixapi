@@ -31,7 +31,9 @@
         },
         "/movies/{id}": {
             "put": {
-                "tags":["Movie"],
+                "tags": [
+                    "Movie"
+                ],
                 "summary": "Atualizar um filme",
                 "parameters": [
                     {
@@ -54,15 +56,43 @@
                         }
                     }
                 },
-                "responses":{
-                    "200":{
-                        "description":"Filme atualizado com sucesso"
+                "responses": {
+                    "200": {
+                        "description": "Filme atualizado com sucesso"
                     },
-                    "404":{
-                        "description":"Filme não encontrado"
+                    "404": {
+                        "description": "Filme não encontrado"
                     },
-                    "500":{
-                        "description":"Falha ao atualizar o registro do filme "
+                    "500": {
+                        "description": "Falha ao atualizar o registro do filme "
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Movie"
+                ],
+                "summary": "Remover um filme",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID do filme a ser removido",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Filme removido com sucesso"
+                    },
+                    "404": {
+                        "description": "O filme não foi encontrado"
+                    },
+                    "500": {
+                        "description": "Não foi possível remover o filme"
                     }
                 }
             }
@@ -148,7 +178,7 @@
                         "type": "integer",
                         "description": "Idioma do filme"
                     },
-                    "oscar_count":{
+                    "oscar_count": {
                         "type": "integer",
                         "description": "Quantidade de Oscars ganhos pelo filme"
                     },
