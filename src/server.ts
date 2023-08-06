@@ -53,7 +53,6 @@ app.put("/movies/:id", async (req, res) => {
         const movie = await prisma.movie.findUnique({
             where: { id }
         });
-        console.log(movie);
 
         if (!movie) {
             return res.status(404).send({ message: "Filme não encontrado" });
