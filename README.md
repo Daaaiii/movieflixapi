@@ -8,13 +8,7 @@
 
 
 ## Tecnologias utilizadas:
-
-- NodeJs
-- Express
-- TypeScript
-- PostgreSQL
-- Prisma
-- Insomnia
+[![My Skills](https://skillicons.dev/icons?i=nodejs,typescript,express,postgres,postman,prisma)](https://skillicons.dev)
 - DBeaver
 - Swagger
   
